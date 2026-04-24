@@ -363,3 +363,11 @@ padding: 10px 15px 6px 15px;
     grid-template-columns: auto;
 }
 }
+@media (max-width: 768px) {
+    header.style-1 .header-logo {
+        padding: 2px 0;
+    }
+    .rb-whatsapp-box{
+        margin-left: -40px!important;
+    }
+}
