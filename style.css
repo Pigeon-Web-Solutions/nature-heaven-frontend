@@ -365,9 +365,10 @@ padding: 10px 15px 6px 15px;
 }
 @media (max-width: 768px) {
     header.style-1 .header-logo {
-        padding: 2px 0;
+        padding: 5px 0;
     }
-    .rb-whatsapp-box{
-        margin-left: -40px!important;
+    .rb-whatsapp-box a {
+        gap: 6px;
+        margin-right: 14px !important;
     }
 }
