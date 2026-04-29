@@ -1,0 +1,960 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/select2.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" href="style.css">
+    <title>Nature Heaven Trek</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-content d-flex justify-content-center text-center">
+            <div class="top-bar-center">
+                <div class="icon-para">
+                    <div class="icon">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.89062 -7.45803e-06C6.98508 0.0446971 7.05638 0.0967798 7.10335 0.19147C7.22327 0.55896 7.09697 1.0727 7.06425 1.45536C7.05566 1.55618 7.04727 1.65701 7.03885 1.75785C7.02472 1.92678 7.01046 2.0957 6.99611 2.26461C6.97772 2.48112 6.95953 2.69764 6.94142 2.91417C6.92577 3.10112 6.91004 3.28806 6.8943 3.475C6.88926 3.53479 6.88424 3.59457 6.87922 3.65436C6.87132 3.74826 6.86337 3.84216 6.85538 3.93606C6.85247 3.97042 6.84957 4.00478 6.84668 4.03915C6.84273 4.08618 6.83872 4.13321 6.8347 4.18023C6.83247 4.2065 6.83025 4.23276 6.82796 4.25982C6.81987 4.34029 6.80884 4.42002 6.79688 4.49999C6.81076 4.49991 6.82464 4.49982 6.83894 4.49973C7.17697 4.49766 7.515 4.49611 7.85303 4.49514C8.0165 4.49465 8.17997 4.49399 8.34344 4.49292C8.50118 4.49188 8.65892 4.49134 8.81666 4.4911C8.87686 4.49092 8.93706 4.49059 8.99726 4.49008C9.08154 4.4894 9.1658 4.48931 9.25009 4.48935C9.275 4.48901 9.29992 4.48868 9.32559 4.48833C9.46731 4.48912 9.54822 4.49955 9.65625 4.59374C9.75929 4.70221 9.76151 4.79848 9.75921 4.94121C9.744 5.06407 9.68819 5.15096 9.62109 5.25292C9.60746 5.27478 9.59383 5.29663 9.57978 5.31915C9.55051 5.36599 9.52099 5.41267 9.49123 5.45919C9.4296 5.5559 9.36985 5.6537 9.31 5.75151C9.26289 5.82842 9.21551 5.90515 9.16809 5.98186C9.06825 6.14365 8.96958 6.30613 8.87109 6.46874C8.72772 6.70539 8.58321 6.94131 8.43796 7.17681C8.32373 7.36219 8.21049 7.54814 8.09766 7.73437C7.95427 7.97101 7.80977 8.20693 7.66452 8.44244C7.55029 8.62781 7.43705 8.81377 7.32422 8.99999C7.18084 9.23664 7.03634 9.47256 6.89108 9.70806C6.77685 9.89344 6.66362 10.0794 6.55078 10.2656C6.4076 10.5019 6.26356 10.7377 6.11816 10.9726C6.03406 11.1087 5.95112 11.2454 5.86945 11.383C5.84257 11.4281 5.81568 11.4731 5.78879 11.5181C5.77161 11.547 5.75453 11.576 5.73754 11.605C5.55403 11.9183 5.55403 11.9183 5.39062 12C5.26101 12.0118 5.14663 12.0173 5.02734 11.9619C4.93744 11.8765 4.88054 11.8064 4.86353 11.6812C4.86344 11.6471 4.86399 11.613 4.86503 11.579C4.86534 11.5592 4.86566 11.5393 4.86598 11.5189C4.87493 11.1643 4.90779 10.81 4.93575 10.4565C4.94435 10.3474 4.95274 10.2383 4.96115 10.1292C4.97528 9.94636 4.98954 9.76358 5.00389 9.5808C5.0241 9.32345 5.04405 9.06608 5.06397 8.80871C5.07784 8.62959 5.09176 8.45047 5.1057 8.27135C5.10907 8.22814 5.11243 8.18492 5.11579 8.14171C5.12535 8.01869 5.13496 7.89567 5.14462 7.77266C5.14753 7.73553 5.15043 7.69839 5.15332 7.66125C5.16725 7.48216 5.18172 7.30337 5.20312 7.12499C5.18924 7.12508 5.17536 7.12517 5.16106 7.12525C4.82303 7.12733 4.485 7.12888 4.14697 7.12985C3.9835 7.13033 3.82003 7.13099 3.65656 7.13207C3.49882 7.1331 3.34108 7.13364 3.18334 7.13389C3.12314 7.13406 3.06294 7.1344 3.00274 7.1349C2.91846 7.13558 2.8342 7.13568 2.74991 7.13564C2.725 7.13597 2.70008 7.13631 2.67441 7.13666C2.53269 7.13587 2.45178 7.12544 2.34375 7.03124C2.26691 6.95036 2.23992 6.87652 2.22803 6.76757C2.23549 6.54447 2.38642 6.36545 2.50781 6.18749C2.52657 6.15933 2.54528 6.13113 2.56393 6.1029C2.59108 6.06193 2.61831 6.02102 2.6458 5.98028C2.74042 5.83996 2.83138 5.69737 2.92236 5.55468C3.08961 5.2925 3.25906 5.03182 3.42921 4.77151C3.51854 4.63464 3.60717 4.49732 3.69585 4.36003C3.74901 4.27775 3.80224 4.19552 3.85547 4.11327C3.87695 4.08007 3.89844 4.04687 3.91992 4.01366C4.88672 2.51952 4.88672 2.51952 5.85352 1.02538C5.86416 1.00893 5.8748 0.992486 5.88577 0.975538C5.90717 0.942465 5.92858 0.909396 5.94999 0.87633C6.005 0.791365 6.0599 0.706332 6.11462 0.621178C6.16826 0.537762 6.22217 0.454528 6.27639 0.371491C6.30183 0.332504 6.32712 0.293421 6.35239 0.254326C6.49486 0.0407658 6.62709 -0.0458843 6.89062 -7.45803e-06ZM6.21094 1.89843C6.17775 1.94925 6.14582 2.00042 6.11426 2.05224C6.01268 2.21695 5.90821 2.37958 5.80225 2.5415C5.78714 2.56458 5.77204 2.58767 5.75648 2.61146C5.72659 2.65715 5.6967 2.70283 5.66681 2.74851C5.60768 2.839 5.5489 2.92971 5.49023 3.0205C5.47996 3.03639 5.46969 3.05228 5.45911 3.06865C5.43871 3.10023 5.4183 3.13181 5.3979 3.16339C5.34474 3.24567 5.29151 3.32791 5.23828 3.41015C5.2168 3.44335 5.19531 3.47655 5.17383 3.50976C4.78711 4.10741 4.40039 4.70507 4.01367 5.30273C3.99772 5.32739 3.99772 5.32739 3.98144 5.35254C3.95998 5.38571 3.93851 5.41888 3.91704 5.45204C3.86297 5.53558 3.80895 5.61916 3.75504 5.70281C3.73334 5.73645 3.71164 5.77008 3.68994 5.8037C3.67943 5.81999 3.66892 5.83627 3.6581 5.85305C3.57297 5.98461 3.48622 6.11504 3.39834 6.24477C3.34965 6.30499 3.34965 6.30499 3.32812 6.37499C3.35835 6.37508 3.38857 6.37516 3.41972 6.37525C3.70457 6.37612 3.98942 6.37747 4.27427 6.3793C4.42072 6.38023 4.56716 6.38098 4.7136 6.38134C4.85494 6.3817 4.99626 6.38251 5.13759 6.38363C5.19151 6.38397 5.24542 6.38416 5.29934 6.38418C5.37487 6.38423 5.45038 6.38487 5.52591 6.38564C5.54819 6.38552 5.57048 6.3854 5.59344 6.38528C5.72433 6.38734 5.8047 6.40138 5.90625 6.49218C5.98863 6.59038 5.98654 6.68827 5.98384 6.81113C5.9836 6.83151 5.98336 6.8519 5.98311 6.8729C5.97775 7.15498 5.95319 7.43607 5.93042 7.71716C5.92567 7.77752 5.92094 7.83788 5.91623 7.89824C5.90515 8.0397 5.89393 8.18115 5.88261 8.3226C5.86111 8.59146 5.83993 8.86035 5.81882 9.12924C5.81188 9.21716 5.80484 9.30508 5.79779 9.393C5.79352 9.44691 5.78925 9.50082 5.78499 9.55473C5.78203 9.59108 5.78203 9.59108 5.77901 9.62816C5.76906 9.7552 5.76363 9.88038 5.76562 10.0078C5.83086 9.94909 5.87179 9.88354 5.91678 9.80849C5.93259 9.78226 5.94841 9.75602 5.96471 9.72898C5.97725 9.70801 5.97725 9.70801 5.99005 9.68662C6.02561 9.62718 6.0614 9.56787 6.09718 9.50856C6.11568 9.47789 6.13417 9.44721 6.15265 9.41653C6.24141 9.26926 6.33152 9.12285 6.42188 8.97655C6.55167 8.76615 6.68048 8.55518 6.80859 8.34374C6.95198 8.1071 7.09648 7.87118 7.24173 7.63567C7.35596 7.4503 7.4692 7.26434 7.58203 7.07812C7.72523 6.84178 7.86952 6.60616 8.0146 6.37098C8.15139 6.14901 8.28678 5.92622 8.4218 5.70318C8.43746 5.67732 8.45313 5.65145 8.46927 5.62481C8.49127 5.58845 8.49127 5.58845 8.51371 5.55136C8.55002 5.49199 8.58718 5.43328 8.62473 5.37469C8.67592 5.30535 8.67592 5.30535 8.67188 5.24999C8.64165 5.24991 8.61143 5.24982 8.58028 5.24973C8.29543 5.24887 8.01058 5.24751 7.72573 5.24568C7.57929 5.24476 7.43284 5.244 7.2864 5.24364C7.14506 5.24329 7.00374 5.24248 6.86241 5.24136C6.80849 5.24101 6.75458 5.24083 6.70066 5.24081C6.62513 5.24075 6.54962 5.24012 6.47409 5.23935C6.44066 5.23953 6.44066 5.23953 6.40656 5.23971C6.27567 5.23765 6.1953 5.2236 6.09375 5.1328C6.01368 5.03634 6.01338 4.94313 6.01616 4.82265C6.0164 4.80329 6.01664 4.78393 6.01689 4.76398C6.02216 4.50126 6.04663 4.23968 6.06958 3.97805C6.07433 3.92227 6.07906 3.8665 6.08377 3.81072C6.09609 3.66531 6.10863 3.51992 6.12122 3.37453C6.14143 3.14084 6.1613 2.90712 6.18118 2.67339C6.18813 2.59209 6.19516 2.51079 6.20221 2.42949C6.20648 2.37977 6.21075 2.33004 6.21501 2.28031C6.21698 2.25785 6.21896 2.23539 6.22099 2.21224C6.22993 2.10726 6.23669 2.00392 6.23438 1.89843C6.22664 1.89843 6.21891 1.89843 6.21094 1.89843Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <p>Confirmed Booked Group, You Can Join for 2026 & 2027</p>
+                </div>
+                <div class="get-btn">
+                    <a href="" class="read-btn">
+                        <span>Know More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top bar section end -->
+
+
+    <!-- header section start -->
+    <header class="header-area style-1">
+        <div class="container  d-flex flex-nowrap align-items-center justify-content-between p-0">
+            <div class="header-logo">
+                <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/images/nhlogo2.png" /></a>
+            </div>
+            <div class="main-menu">
+                <div class="mobile-logo-area d-lg-none d-flex justify-content-between">
+                    <div class="mobile-logo-wrap">
+                        <a href="index.html"><img alt="image" class="img-fluid"
+                                src="assets/image/images/nhlogo2.png"/></a>
+                    </div>
+                    <div class="menu-close-btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item-has-children">
+                        <a href="index.html" class="drop-down">Services</a><i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li class="active">
+                                <a href="index.html">Trekking</a>
+                            </li>
+                            <li>
+                                <a href="index-2.html">Peak Climbing</a>
+                            </li>
+                            <li>
+                                <a href="index-3.html">River Rafting</a>
+                            </li>
+                            <li>
+                                <a href="index-4.html">Day Tours</a>
+                            </li>
+                            <li>
+                                <a href="index-4.html">Expedition</a>
+                            </li>
+                            <li>
+                                <a href="index-4.html">Paragliding</a>
+                            </li>
+                            <li>
+                                <a href="index-4.html">Tour in Nepal</a>
+                            </li>
+                            <li>
+                                <a href="index-4.html">Mountain Flight</a>
+                            </li>
+                            <li>
+                                <a href="index-4.html">Bungy Jumping</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="drop-down">Trekking</a>
+                        <i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Best Trekking in Nepal</a>
+                                <i class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="">Manaslu Circuit Trek</a></li>
+                                    <li><a href="">Tsum Valley Trek</a></li>
+                                    <li><a href="">Everest Base Camp Trek</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Annapurna Region Trek</a>
+                                <i class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="">Annapurna Base Camp Short Trek</a></li>
+                                    <li><a href="">Annapurna Base Camp Trek</a></li>
+                                    <li><a href="">Annapurna Circuit Trek</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Annapurna Region Trek</a>
+                                <i class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="">Everest Base Camp Trek 2026</a></li>
+                                    <li><a href="">Island Peak Climbing with EBC Trek</a></li>
+                                    <li><a href="">Everest Three Passes Trek</a></li>
+                                </ul>
+                            </li>        
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="drop-down">Peak Climbing</a>
+                        <i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Trek with Peak Climbing</a>
+                                <i class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="">Kyajo Ri Peak Climbing – 17 Days</a></li>
+                                    <li><a href="">Naya Kanga Peak Climbing – 17 Days</a></li>
+                                    <li><a href="">Three High Passes with Lobuche Peak</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">5500 - 6500m Peak Climbing</a>
+                                <i class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="">Mera Peak Climbing from Khare – 3 Days</a></li>
+                                    <li><a href="">Lobuche East Peak Climbing from Lobuche – 3 Days</a></li>
+                                    <li><a href="">Island Peak Climbing from Chhukung – 3 Days</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Multiple Peaks Climbing</a>
+                                <i class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"></i>
+                                <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="">Amphu Lapcha pass with Island and Mera Peak – 25 Days</a></li>
+                                </ul>
+                            </li>        
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item-has-children">
+                        <a href="#" class="drop-down">Company</a><i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="drop-down">Travellers Info</a><i class="bi bi-plus dropdown-icon"></i>
+                        <ul class="sub-menu">
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Trekking Season</a></li>
+                            <li><a href="">Packing List</a></li>
+                            <li><a href="">Best Time to Visit</a></li>
+                            <li><a href="">Getting Into Nepal</a></li>
+                            <li><a href="">Health & Safety</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="contact.html" class="drop-down">Contact</a></li>
+                </ul>
+                <div class="btn-area d-lg-none d-flex justify-content-center">
+                    <a class="primary-btn" href="https://wa.me/+9779851218358"> Let’s Talk </a>
+                </div>
+            </div>
+            <div class="nav-right d-flex jsutify-content-end align-items-center">
+                <div class="rb-whatsapp-box">
+                    <a href="https://wa.me/+9779851218358">
+                    <div class="rb-whatsapp-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    </div>
+                    <div class="rb-whatsapp-text">
+                        <span class="rb-whatsapp-label">Whatsapp</span>
+                        <span class="rb-whatsapp-number">+977 9851218358</span>
+                    </div>
+                    </a>
+                </div>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg class="sidebar-toggle-button" width="25" height="25" viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.29608 0.0658336C0.609639 0.31147 0.139209 0.899069 0.0432028 1.63598C-0.0144009 2.09353 -0.0144009 5.4939 0.0432028 5.95146C0.129608 6.59686 0.489632 7.11703 1.07047 7.42046L1.36329 7.57458H3.83545H6.30761L6.59563 7.42046C6.96525 7.2278 7.25807 6.93401 7.45008 6.56314L7.60369 6.27416V3.79372V1.31328L7.45008 1.02429C7.25807 0.653433 6.96525 0.359633 6.59563 0.166978L6.30761 0.0128531L3.90745 0.00322056C1.83372 -0.00641251 1.4785 0.00322056 1.29608 0.0658336ZM6.2356 0.802741C6.52842 0.956866 6.65803 1.08209 6.79244 1.34699L6.90765 1.57336V3.80817V6.03816L6.74924 6.29824C6.53322 6.66429 6.2068 6.85694 5.74117 6.90029C5.54916 6.91956 4.55549 6.92437 3.52343 6.91474L1.65131 6.90029L1.41129 6.77025C1.12807 6.62094 1.00807 6.49571 0.854455 6.20191L0.739248 5.98518V3.79372V1.60226L0.854455 1.38552C1.05607 0.995397 1.33929 0.778659 1.74731 0.706413C1.85292 0.687148 2.85618 0.677515 3.97946 0.677515L6.01959 0.687148L6.2356 0.802741Z">
+                        </path>
+                        <path
+                            d="M11.6647 0.0658336C10.9783 0.31147 10.5079 0.899069 10.4119 1.63598C10.3879 1.82863 10.3687 2.80154 10.3687 3.79372C10.3687 4.7859 10.3879 5.75881 10.4119 5.95146C10.4983 6.59686 10.8583 7.11703 11.4391 7.42046L11.7319 7.57458H14.2041H16.6763L16.9643 7.42046C17.3339 7.2278 17.6267 6.93401 17.8187 6.56314L17.9723 6.27416V3.79372V1.31328L17.8187 1.02429C17.6267 0.653433 17.3339 0.359633 16.9643 0.166978L16.6763 0.0128531L14.2761 0.00322056C12.2024 -0.00641251 11.8471 0.00322056 11.6647 0.0658336ZM16.6043 0.802741C16.9019 0.956866 17.0267 1.08209 17.1611 1.35181L17.2811 1.583L17.2763 3.79854C17.2763 5.73472 17.2667 6.03816 17.1995 6.1682C17.0555 6.45237 16.9067 6.61131 16.6475 6.7558L16.3882 6.90029H14.2041H12.02L11.7799 6.77025C11.4967 6.62094 11.3767 6.49571 11.2231 6.20191L11.1079 5.98518V3.79372V1.60226L11.2231 1.38552C11.4247 0.995397 11.7079 0.778659 12.116 0.706413C12.2216 0.687148 13.2248 0.677515 14.3481 0.677515L16.3882 0.687148L16.6043 0.802741Z">
+                        </path>
+                        <path
+                            d="M1.29608 10.4693C0.609639 10.7149 0.139209 11.3025 0.0432028 12.0394C-0.0144009 12.497 -0.0144009 15.8973 0.0432028 16.3549C0.129608 17.0003 0.489632 17.5205 1.07047 17.8239L1.36329 17.978H3.83545H6.30761L6.59563 17.8239C6.96525 17.6312 7.25807 17.3374 7.45008 16.9666L7.60369 16.6776V14.1972V11.7167L7.45008 11.4277C7.25807 11.0569 6.96525 10.7631 6.59563 10.5704L6.30761 10.4163L3.90745 10.4067C1.83372 10.397 1.4785 10.4067 1.29608 10.4693ZM6.2356 11.2062C6.52842 11.3603 6.65803 11.4855 6.79244 11.7504L6.90765 11.9768V14.2116V16.4416L6.74924 16.7017C6.53322 17.0677 6.2068 17.2604 5.74117 17.3037C5.54916 17.323 4.55549 17.3278 3.52343 17.3182L1.65131 17.3037L1.41129 17.1737C1.12807 17.0244 1.00807 16.8992 0.854455 16.6054L0.739248 16.3886V14.1972V12.0057L0.854455 11.789C1.05607 11.3988 1.33929 11.1821 1.74731 11.1099C1.85292 11.0906 2.85618 11.081 3.97946 11.081L6.01959 11.0906L6.2356 11.2062Z">
+                        </path>
+                        <path
+                            d="M13.2441 10.4934C11.8856 10.8498 10.8583 11.8853 10.5079 13.2531C10.3735 13.7781 10.3735 14.6162 10.5079 15.1412C10.8343 16.4127 11.732 17.3808 12.9945 17.8239C13.3593 17.9491 13.4937 17.9732 14.0601 17.9925C14.617 18.0117 14.7754 17.9973 15.1162 17.9106C16.5179 17.5542 17.5452 16.5283 17.9052 15.1219C18.0348 14.6162 18.03 13.7685 17.9004 13.2531C17.55 11.8757 16.5179 10.8401 15.145 10.4885C14.6314 10.3585 13.7529 10.3585 13.2441 10.4934ZM15.2314 11.2784C15.7066 11.4518 16.0475 11.6782 16.4363 12.0828C17.0075 12.6848 17.2763 13.3639 17.2763 14.2068C17.2763 15.0882 17.0075 15.7288 16.3691 16.3645C15.721 17.0099 15.0826 17.2796 14.2186 17.2845C13.7001 17.2845 13.3113 17.193 12.8121 16.957C12.5336 16.8221 12.3608 16.692 12.0392 16.3694C11.396 15.724 11.132 15.0882 11.132 14.1972C11.132 13.3495 11.396 12.6896 11.972 12.0828C12.3608 11.6782 12.7017 11.4518 13.1817 11.2736C13.7913 11.0521 14.6218 11.0521 15.2314 11.2784Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  header section end -->
+
+
+     <!-- breadcrumb-section start -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="banner-content">
+                        <h1>
+                            Trekking in Nepal
+                        </h1>
+                        <p class="text-white">Nature Heaven Treks and Expedition, based in Kathmandu, Nepal, offers awe-inspiring adventures amidst Himalayan landscapes, guided by experienced professionals, ensuring unforgettable experiences in nature’s embrace.</p>
+                         <a class="primary-btn three-small button_custom" href="">Talk to Expert</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-section end -->
+
+
+<section class="trek-info-section">
+  <div class="trek-info-container">
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon blue">🌐</div>
+      <div>
+        <p class="trek-label">Destination</p>
+        <h4 class="trek-value">Nepal</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon red">🎯</div>
+      <div>
+        <p class="trek-label">Grade</p>
+        <h4 class="trek-value">Challenging</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon green">🔁</div>
+      <div>
+        <p class="trek-label">Start / End Point</p>
+        <h4 class="trek-value">Kathmandu / Kathmandu</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon navy">🛏️</div>
+      <div>
+        <p class="trek-label">Accommodation</p>
+        <h4 class="trek-value">Hotel/Lodge/Tea House</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon yellow">☀️</div>
+      <div>
+        <p class="trek-label">Best Season</p>
+        <h4 class="trek-value">Feb - June, Sep - Dec</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon orange">🍽️</div>
+      <div>
+        <p class="trek-label">Meals Included</p>
+        <h4 class="trek-value">All meals during trek</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon purple">🚶</div>
+      <div>
+        <p class="trek-label">Activity</p>
+        <h4 class="trek-value">Everest Treks</h4>
+      </div>
+    </div>
+
+    <div class="trek-info-item">
+      <div class="trek-info-icon sky">⛰️</div>
+      <div>
+        <p class="trek-label">Max Altitude</p>
+        <h4 class="trek-value">Kongma La (5,535m)</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- destination sections start -->
+    <div class="destination-section mb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="destination-image-area mb-50">
+                        <div class="tab-content mb-25" id="myTab5Content">
+                            <div class="tab-pane fade show active" id="country-one" role="tabpanel"
+                                aria-labelledby="country-one-tab">
+                                <div class="transport-img">
+                                    <div class="swiper product-img-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-one-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-two-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-three-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-four-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-five-big.png"
+                                                    alt="image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="country-two" role="tabpanel"
+                                aria-labelledby="country-two-tab">
+                                <div class="transport-img">
+                                    <div class="swiper product-img-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-three-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-four-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-five-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-one-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-two-big.png"
+                                                    alt="image" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="country-three" role="tabpanel"
+                                aria-labelledby="country-three-tab">
+                                <div class="transport-img">
+                                    <div class="swiper product-img-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-three-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-four-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-five-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-one-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-two-big.png"
+                                                    alt="image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="country-four" role="tabpanel"
+                                aria-labelledby="country-four-tab">
+                                <div class="transport-img">
+                                    <div class="swiper product-img-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-one-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-five-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-two-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-three-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-four-big.png"
+                                                    alt="image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="country-five" role="tabpanel"
+                                aria-labelledby="country-five-tab">
+                                <div class="transport-img">
+                                    <div class="swiper product-img-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-three-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-four-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-five-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-one-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-two-big.png"
+                                                    alt="image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="country-six" role="tabpanel"
+                                aria-labelledby="country-six-tab">
+                                <div class="transport-img">
+                                    <div class="swiper product-img-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-one-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-five-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-two-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-three-big.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/image/card-img/details-image-four-big.png"
+                                                    alt="image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destination-pagination">
+                            <div class="product-pagination"></div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab5" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="country-one-tab" data-bs-toggle="tab"
+                                    data-bs-target="#country-one" type="button" role="tab" aria-controls="country-one"
+                                    aria-selected="true">
+                                    <img src="assets/image/card-img/details-image-one-small.png" alt="image" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="country-two-tab" data-bs-toggle="tab"
+                                    data-bs-target="#country-two" type="button" role="tab" aria-controls="country-two"
+                                    aria-selected="false">
+                                    <img src="assets/image/card-img/details-image-two-small.png" alt="image" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="country-three-tab" data-bs-toggle="tab"
+                                    data-bs-target="#country-three" type="button" role="tab"
+                                    aria-controls="country-three" aria-selected="false">
+                                    <img src="assets/image/card-img/details-image-three-small.png" alt="image" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="country-four-tab" data-bs-toggle="tab"
+                                    data-bs-target="#country-four" type="button" role="tab" aria-controls="country-four"
+                                    aria-selected="false">
+                                    <img src="assets/image/card-img/details-image-four-small.png" alt="image" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="country-five-tab" data-bs-toggle="tab"
+                                    data-bs-target="#country-five" type="button" role="tab" aria-controls="country-five"
+                                    aria-selected="false">
+                                    <img src="assets/image/card-img/details-image-five-small.png" alt="image" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="country-six-tab" data-bs-toggle="tab"
+                                    data-bs-target="#country-six" type="button" role="tab" aria-controls="country-six"
+                                    aria-selected="false">
+                                    <img src="assets/image/card-img/details-image-six-small.png" alt="image" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <div class="modal-image active">
+                                    <img src="assets/image/card-img/details-image-five-small.png" alt="image" />
+                                    <button class="StartSlideShowFirstImage">
+                                        <span><i class="bi bi-eye"></i>View More</span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="discover-content-area">
+                        <h2>Let’s Discover Indonesia</h2>
+                        <div class="first-paragraph">
+                            <p>
+                                Indonesia enchants travelers with its breathtaking landscapes,
+                                ancient wonders, and diverse cultural heritage. Whether you
+                                prefer the rhythmic journey of a train ride, the serenity of
+                                cruising along its winding rivers, or the freedom of a scenic
+                                countryside drive, this archipelago offers an experience
+                                unlike any other.
+                            </p>
+                        </div>
+                        <div class="second-paragraph">
+                            <p>
+                                Meanwhile, West Bengal unfolds like a vivid tapestry of
+                                history, nature, and tradition. Its capital, Kolkata, hums
+                                with cosmopolitan energy, seamlessly blending colonial charm
+                                with modern vibrancy. Venture beyond the city, and you'll find
+                                the Sundarbans—an untamed UNESCO World Heritage Site where the
+                                elusive Royal Bengal Tiger roams.
+                            </p>
+                        </div>
+                        <div class="third-paragraph">
+                            <p>
+                                For those drawn to the sea, the golden shores of Digha and
+                                Mandarmani invite travelers to unwind by the waves. Meanwhile,
+                                Bishnupur whispers stories of an era through its exquisite
+                                terracotta temples, a testament to the state’s rich artistic
+                                heritage.
+                            </p>
+                        </div>
+
+                        <div class="first-paragraph">
+                            <p>
+                                Indonesia enchants travelers with its breathtaking landscapes,
+                                ancient wonders, and diverse cultural heritage. Whether you
+                                prefer the rhythmic journey of a train ride, the serenity of
+                                cruising along its winding rivers, or the freedom of a scenic
+                                countryside drive, this archipelago offers an experience
+                                unlike any other.
+                            </p>
+                        </div>
+                        <div class="second-paragraph">
+                            <p>
+                                Meanwhile, West Bengal unfolds like a vivid tapestry of
+                                history, nature, and tradition. Its capital, Kolkata, hums
+                                with cosmopolitan energy, seamlessly blending colonial charm
+                                with modern vibrancy. Venture beyond the city, and you'll find
+                                the Sundarbans—an untamed UNESCO World Heritage Site where the
+                                elusive Royal Bengal Tiger roams.
+                            </p>
+                        </div>
+                        <div class="third-paragraph">
+                            <p>
+                                For those drawn to the sea, the golden shores of Digha and
+                                Mandarmani invite travelers to unwind by the waves. Meanwhile,
+                                Bishnupur whispers stories of an era through its exquisite
+                                terracotta temples, a testament to the state’s rich artistic
+                                heritage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5647631857846!2d90.36311167605992!3d23.83407118555764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52adb88!2sEgens%20Lab!5e0!3m2!1sen!2sbd!4v1700138349574!5m2!1sen!2sbd"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                     <div class="contact-section mt-5">
+                        <div class="contact-form-wrapper">
+                            <form>
+                                <div class="form-title">
+                                    <h2>Message Us</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-inner">
+                                            <label>Your Name</label>
+                                            <div class="input-area">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6574 1.46082C10.6762 1.47238 10.6951 1.48395 10.7145 1.49587C11.2243 1.81605 11.6796 2.27057 11.9855 2.78894C11.998 2.80997 12.0105 2.831 12.0233 2.85267C12.6015 3.84212 12.7382 4.96821 12.4494 6.07696C12.1675 7.09238 11.4709 7.9791 10.562 8.50611C9.64704 9.01799 8.49886 9.21507 7.47355 8.94008C7.42797 8.9265 7.38248 8.91258 7.33711 8.89832C7.31423 8.8912 7.29136 8.88409 7.26779 8.87675C6.63089 8.67172 6.09662 8.32655 5.61055 7.86902C5.5909 7.85151 5.57126 7.83401 5.55102 7.81597C4.87913 7.19197 4.4574 6.19407 4.41051 5.2874C4.39475 4.79241 4.4189 4.33032 4.54805 3.85144C4.55373 3.82954 4.55942 3.80764 4.56528 3.78507C4.82236 2.82441 5.50273 1.9818 6.34102 1.46082C6.35998 1.44898 6.37895 1.43715 6.39849 1.42496C7.68216 0.643311 9.38634 0.670129 10.6574 1.46082ZM6.37422 2.85535C6.34867 2.8809 6.32311 2.90645 6.29679 2.93278C5.7442 3.51549 5.49233 4.25278 5.49693 5.04716C5.50975 5.51256 5.6227 5.931 5.84297 6.34168C5.85962 6.37463 5.87627 6.40759 5.89342 6.44155C6.25583 7.11698 6.91102 7.60511 7.63276 7.83966C8.39871 8.0669 9.21101 7.98361 9.91621 7.6093C10.1507 7.47744 10.3578 7.31758 10.5578 7.13855C10.5788 7.12028 10.5998 7.102 10.6215 7.08317C11.1391 6.60343 11.4682 5.85054 11.4949 5.15194C11.517 4.21485 11.2135 3.46907 10.5703 2.78687C10.0212 2.24962 9.26864 1.96849 8.50752 1.94849C7.68233 1.96404 6.95802 2.27155 6.37422 2.85535Z"
+                                                        fill="#666666" />
+                                                    <path
+                                                        d="M8.47779 10.0813C8.50986 10.0813 8.54193 10.0814 8.57498 10.0814C9.10286 10.0827 9.61019 10.1136 10.1276 10.2266C10.1769 10.2373 10.1769 10.2373 10.2273 10.2481C10.8915 10.3967 11.5214 10.6336 12.1198 10.9571C12.1396 10.9677 12.1595 10.9783 12.18 10.9892C13.4638 11.6785 14.5124 12.8265 14.9503 14.2296C15.0892 14.6972 15.24 15.3174 15.106 15.7985C15.0089 15.9582 14.8885 16.0771 14.7096 16.1367C14.511 16.1562 14.3742 16.1139 14.2116 16.0039C14.0987 15.8824 14.044 15.7972 14.0324 15.6335C13.9852 15.0265 13.8855 14.4931 13.6139 13.9453C13.5978 13.9122 13.5817 13.8792 13.5651 13.8451C12.9563 12.6629 11.7534 11.9011 10.5239 11.4985C8.8305 10.9703 6.98356 11.1324 5.41026 11.9486C5.07759 12.1264 4.76964 12.3387 4.48304 12.584C4.45582 12.6072 4.4286 12.6303 4.40055 12.6542C3.55815 13.3906 3.07012 14.3472 2.97891 15.4619C2.97564 15.5135 2.97564 15.5135 2.9723 15.5661C2.95848 15.7565 2.91868 15.8782 2.77723 16.0122C2.61332 16.1215 2.49007 16.1541 2.29163 16.1367C2.11329 16.0749 1.99589 15.9603 1.89319 15.8047C1.6532 15.0445 2.09016 13.9942 2.42717 13.3285C3.11439 12.0229 4.38038 11.0677 5.74476 10.5586C5.77195 10.5484 5.79915 10.5382 5.82717 10.5276C6.68597 10.2104 7.56577 10.0794 8.47779 10.0813Z"
+                                                        fill="#666666" />
+                                                </svg>
+                                                <input type="text" placeholder="Donald" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-inner">
+                                            <label>Phone Number</label>
+                                            <div class="input-area">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.32622 0.228238C4.46735 0.325544 4.59468 0.432914 4.71934 0.550153C4.75062 0.579485 4.75062 0.579485 4.78253 0.609409C5.12684 0.934985 5.46136 1.27083 5.79666 1.60562C5.89774 1.70651 5.99912 1.80709 6.10057 1.9076C6.18011 1.98651 6.25942 2.06565 6.33867 2.14486C6.37591 2.182 6.41323 2.21906 6.45064 2.25602C6.64826 2.45147 6.83526 2.65104 7.00799 2.86905C7.02298 2.88789 7.03797 2.90673 7.05342 2.92614C7.32667 3.27963 7.43183 3.69263 7.38506 4.13376C7.32067 4.53022 7.17156 4.81604 6.90569 5.11325C6.88134 5.1412 6.85698 5.16915 6.83189 5.19794C6.62466 5.43013 6.40522 5.65027 6.1856 5.87069C6.15602 5.90043 6.12643 5.93017 6.09595 5.96081C5.92856 6.1278 5.75814 6.28869 5.57757 6.44137C5.86536 7.09762 6.24531 7.68606 6.70647 8.23434C6.72083 8.25147 6.73519 8.2686 6.74999 8.28625C7.10101 8.70397 7.4699 9.10029 7.85406 9.48776C7.88269 9.51682 7.91132 9.54589 7.94082 9.57583C8.13876 9.77404 8.3472 9.9521 8.56585 10.1269C8.60728 10.1617 8.64859 10.1967 8.68971 10.2318C9.16044 10.6296 9.67568 10.981 10.2177 11.2745C10.2404 11.287 10.2632 11.2995 10.2866 11.3123C10.3993 11.3728 10.3993 11.3728 10.5238 11.382C10.6084 11.3487 10.6528 11.3051 10.7163 11.2401C10.7404 11.2157 10.7645 11.1913 10.7893 11.1661C10.8279 11.1262 10.8279 11.1262 10.8674 11.0855C10.8943 11.0582 10.9213 11.0309 10.949 11.0027C11.0643 10.8858 11.1789 10.7684 11.2936 10.651C11.3775 10.5653 11.4617 10.4799 11.546 10.3945C11.5713 10.3684 11.5966 10.3422 11.6226 10.3153C11.8561 10.0788 12.1162 9.8513 12.4299 9.73056C12.4616 9.71793 12.4934 9.70531 12.5261 9.6923C12.9245 9.55929 13.364 9.59875 13.7455 9.76169C14.1215 9.96367 14.4072 10.2711 14.7049 10.5706C14.7581 10.6237 14.8113 10.6768 14.8646 10.7299C14.9755 10.8407 15.0863 10.9517 15.1968 11.0629C15.3379 11.2046 15.4795 11.3458 15.6213 11.4868C15.7311 11.5962 15.8406 11.7058 15.95 11.8156C16.0021 11.8677 16.0543 11.9198 16.1065 11.9718C16.6262 12.489 16.6262 12.489 16.8002 12.8164C16.8141 12.8414 16.8279 12.8664 16.8422 12.8922C17.048 13.2783 17.0246 13.7384 16.9031 14.1451C16.7102 14.6689 16.2701 15.0521 15.8809 15.4332C15.8073 15.5056 15.7338 15.5782 15.6603 15.6508C15.615 15.6955 15.5697 15.7401 15.5242 15.7846C15.3956 15.9112 15.2745 16.0418 15.1573 16.179C14.7517 16.6397 14.1198 16.9387 13.5131 17C12.6463 17.0418 11.8493 16.9226 11.0229 16.6679C10.9962 16.6598 10.9696 16.6516 10.9421 16.6432C9.60595 16.2257 8.31381 15.5068 7.17132 14.709C7.15251 14.6958 7.13369 14.6827 7.11431 14.6692C6.97722 14.5734 6.84152 14.4757 6.70647 14.3769C6.68502 14.3612 6.66356 14.3456 6.64146 14.3294C6.36614 14.1276 6.0994 13.9191 5.84086 13.6961C5.75746 13.6251 5.67267 13.5576 5.58587 13.4908C5.26385 13.2362 4.97083 12.9407 4.68108 12.6504C4.62595 12.5959 4.57078 12.5416 4.51559 12.4872C4.46801 12.4401 4.42043 12.393 4.37288 12.3458C4.34069 12.3139 4.30844 12.2821 4.27613 12.2504C4.07651 12.0543 3.89007 11.8525 3.71527 11.6337C3.6436 11.5445 3.56847 11.4614 3.48992 11.3783C3.3179 11.1907 3.16075 10.9943 3.00627 10.7923C2.97041 10.7454 2.93444 10.6986 2.89836 10.6518C2.55238 10.2031 2.23323 9.73914 1.92522 9.26364C1.91133 9.24223 1.89745 9.22082 1.88314 9.19876C1.80557 9.07826 1.7318 8.95575 1.6596 8.832C1.64436 8.80609 1.62911 8.78018 1.61341 8.75348C0.687009 7.17174 -0.386068 4.97637 0.106249 3.08681C0.2463 2.58676 0.49019 2.20844 0.839636 1.83094C0.865136 1.80338 0.865136 1.80338 0.891151 1.77526C1.09759 1.55361 1.3102 1.33809 1.52406 1.12362C1.59335 1.05401 1.66227 0.984054 1.73119 0.91409C2.34971 0.290581 2.34971 0.290581 2.7553 0.116177C2.79023 0.100769 2.82515 0.0853608 2.86114 0.0694856C3.33476 -0.114701 3.89805 -0.0190232 4.32622 0.228238ZM2.08533 1.85727C2.00208 1.9402 1.91849 2.02276 1.83489 2.10532C1.78115 2.15884 1.72743 2.21238 1.67374 2.26595C1.6491 2.29017 1.62447 2.31439 1.5991 2.33935C1.14715 2.79321 0.904076 3.30047 0.89531 3.94725C0.904698 5.01848 1.288 6.04205 1.726 7.00583C1.74037 7.03773 1.75473 7.06964 1.76953 7.10252C2.10809 7.84915 2.5174 8.55877 2.98772 9.23044C3.00078 9.24915 3.01383 9.26787 3.02728 9.28715C3.34015 9.73457 3.66585 10.1736 4.01702 10.5918C4.03118 10.6087 4.04533 10.6257 4.05992 10.6432C4.24577 10.8661 4.43506 11.0846 4.6318 11.298C4.69572 11.3682 4.75786 11.4393 4.81973 11.5113C4.9648 11.6776 5.12036 11.8328 5.27666 11.9884C5.30506 12.0169 5.33346 12.0454 5.36272 12.0748C5.5102 12.2221 5.65977 12.3646 5.81788 12.5004C5.89864 12.5699 5.97662 12.6423 6.05486 12.7147C6.22237 12.8671 6.39505 13.0093 6.57366 13.1484C6.61829 13.1837 6.6629 13.2189 6.70751 13.2542C7.0425 13.5183 7.38305 13.7718 7.73577 14.0117C7.75742 14.0264 7.77906 14.0412 7.80137 14.0563C9.29237 15.063 11.5108 16.3986 13.3999 16.119C13.7879 16.0415 14.0746 15.9282 14.3764 15.6718C14.4278 15.6318 14.4278 15.6318 14.4802 15.5909C14.5515 15.5273 14.6064 15.4711 14.6665 15.3987C14.7854 15.2615 14.9125 15.1342 15.0416 15.0069C15.0631 14.9857 15.0845 14.9645 15.1065 14.9427C15.1963 14.8542 15.2861 14.7658 15.3763 14.6776C15.8757 14.2228 15.8757 14.2228 16.0843 13.607C16.0856 13.5785 16.0869 13.5499 16.0883 13.5205C16.039 13.2372 15.8694 13.0231 15.6691 12.827C15.6347 12.7922 15.6347 12.7922 15.5995 12.7568C15.5243 12.6812 15.4486 12.6062 15.3727 12.5313C15.3199 12.4785 15.2671 12.4257 15.2143 12.3729C15.104 12.2626 14.9934 12.1526 14.8826 12.0429C14.7408 11.9024 14.5997 11.7614 14.4587 11.6202C14.3499 11.5112 14.2408 11.4025 14.1316 11.2939C14.0794 11.242 14.0274 11.19 13.9753 11.138C13.9026 11.0653 13.8295 10.9929 13.7563 10.9206C13.7351 10.8993 13.7138 10.8779 13.6919 10.8559C13.4958 10.6635 13.3117 10.5399 13.0313 10.522C12.6584 10.5372 12.4033 10.8299 12.1602 11.0784C12.1291 11.1099 12.0979 11.1414 12.0667 11.1729C11.935 11.3059 11.8038 11.4393 11.6727 11.5728C11.5921 11.6548 11.5114 11.7365 11.4304 11.818C11.3851 11.8639 11.34 11.91 11.295 11.9562C11.1466 12.1058 11.0137 12.2261 10.8237 12.3183C10.8017 12.3293 10.7798 12.3402 10.7573 12.3515C10.4172 12.4086 10.1839 12.2847 9.89754 12.1244C9.82846 12.0864 9.75861 12.0508 9.68801 12.0157C9.33385 11.8383 9.01645 11.6242 8.69866 11.3886C8.66162 11.3615 8.62457 11.3344 8.58751 11.3073C8.36412 11.1422 8.14785 10.9695 7.93499 10.791C7.91814 10.7772 7.90129 10.7634 7.88394 10.7492C7.57389 10.4948 7.28861 10.2173 7.0053 9.93393C6.98729 9.91595 6.96928 9.89796 6.95072 9.87944C6.75144 9.68012 6.55705 9.47852 6.37444 9.26364C6.34372 9.22882 6.31294 9.19406 6.2821 9.15936C5.71465 8.51374 5.21016 7.81279 4.84321 7.03366C4.80046 6.94465 4.75489 6.85711 4.70929 6.76954C4.61934 6.57013 4.60438 6.33002 4.67836 6.12413C4.76775 5.96003 4.88186 5.83987 5.02103 5.71648C5.2566 5.50452 5.48187 5.28268 5.70624 5.05896C5.7752 4.99033 5.8445 4.92206 5.91381 4.85378C5.95839 4.80943 6.00294 4.76505 6.04747 4.72065C6.06788 4.70065 6.08828 4.68065 6.10931 4.66005C6.31288 4.45543 6.4755 4.244 6.4865 3.94699C6.48092 3.64249 6.33072 3.47112 6.1292 3.25522C6.11172 3.23641 6.09425 3.2176 6.07625 3.19822C5.8802 2.98828 5.67839 2.78416 5.47562 2.58073C5.45589 2.5609 5.43616 2.54108 5.41582 2.52065C5.31176 2.41609 5.20761 2.31163 5.10337 2.20724C4.99673 2.10042 4.8904 1.9933 4.78415 1.8861C4.7013 1.80264 4.61824 1.7194 4.53511 1.63622C4.49582 1.59683 4.45662 1.55736 4.4175 1.51781C3.99491 1.06583 3.99491 1.06583 3.42974 0.886075C2.86934 0.894148 2.4534 1.49007 2.08533 1.85727Z"
+                                                        fill="#666666" />
+                                                </svg>
+                                                <input type="text" placeholder="+990-737 621 432" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-inner">
+                                            <label>Email Address</label>
+                                            <div class="input-area">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M15.5059 2.52344H1.49414C0.668611 2.52344 0 3.1962 0 4.01758V12.9824C0 13.8087 0.673525 14.4766 1.49414 14.4766H15.5059C16.3245 14.4766 17 13.8115 17 12.9824V4.01758C17 3.19766 16.334 2.52344 15.5059 2.52344ZM15.2966 3.51953L9.55652 9.22937C9.2743 9.5116 8.8991 9.66699 8.5 9.66699C8.1009 9.66699 7.7257 9.51157 7.44255 9.22844L1.70339 3.51953H15.2966ZM0.996094 12.7797V4.22095L5.30048 8.50266L0.996094 12.7797ZM1.70402 13.4805L6.00671 9.20513L6.73914 9.93371C7.20949 10.4041 7.83484 10.6631 8.5 10.6631C9.16516 10.6631 9.79051 10.4041 10.2599 9.93464L10.9933 9.20513L15.296 13.4805H1.70402ZM16.0039 12.7797L11.6995 8.50266L16.0039 4.22095V12.7797Z"
+                                                        fill="#666666" />
+                                                </svg>
+                                                <input type="email" placeholder="hello@example.com" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-inner">
+                                            <label>Your Message</label>
+                                            <textarea placeholder="Leave your message..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-inner">
+                                            <button class="primary-submit five" type="submit">
+                                                Submit
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.444 7.36756H1.10379C0.624605 7.36756 0.236328 6.97928 0.236328 6.50009C0.236328 6.02091 0.624605 5.63263 1.10379 5.63263H11.444C11.9232 5.63263 12.3114 6.02091 12.3114 6.50009C12.3114 6.97928 11.9232 7.36756 11.444 7.36756Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M7.4717 11.4707C7.35221 11.4708 7.23399 11.4462 7.12448 11.3985C7.01496 11.3507 6.91651 11.2808 6.83532 11.1931C6.5095 10.842 6.53032 10.293 6.88147 9.96722L10.6105 6.50881L6.7687 3.04103C6.41304 2.72007 6.38494 2.17148 6.7059 1.81582C7.02686 1.46016 7.57544 1.43205 7.9311 1.75302L12.4766 5.85613C12.6574 6.01921 12.7611 6.25065 12.7629 6.49423C12.7646 6.73782 12.664 6.97064 12.4853 7.13616L8.06122 11.2393C7.90106 11.3882 7.69041 11.4709 7.4717 11.4707Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="others-image-wrap d-none">
+                <a href="assets/image/card-img/details-image-one-big.png" data-fancybox="images"></a>
+                <a href="assets/image/card-img/details-image-two-big.png" data-fancybox="images"></a>
+                <a href="assets/image/card-img/details-image-three-big.png" data-fancybox="images"></a>
+                <a href="assets/image/card-img/details-image-four-big.png" data-fancybox="images"></a>
+                <a href="assets/image/card-img/details-image-five-big.png" data-fancybox="images"></a>
+                <a href="assets/image/card-img/details-image-six-big.png" data-fancybox="images"></a>
+            </div>
+        </div>
+    </div>
+<!-- destination sections end -->
+
+
+    <!-- footer section four start -->
+    <div class="footer-section-four">
+        <div class="container">
+            <div class="row">
+                <div class="co-lg-12">
+                    <div class="footer-top-content">
+                        <ul class="information-wrapper">
+                            <li class="single-information">
+                                <div class="icon">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.023 2.15782C7.51275 2.5743 7.96528 3.03521 8.42045 3.48861C8.4712 3.53909 8.47121 3.53909 8.52298 3.59059C8.70151 3.76818 8.87989 3.94591 9.05813 4.12378C9.24069 4.3059 9.42376 4.48751 9.60695 4.66901C9.74938 4.81032 9.89145 4.952 10.0334 5.09377C10.1007 5.16087 10.1682 5.22783 10.2358 5.29465C10.9949 6.04561 11.5591 6.77098 11.606 7.8822C11.5434 9.16513 10.5636 10.0247 9.71006 10.8739C9.63484 10.9494 9.63484 10.9494 9.5581 11.0264C9.50951 11.0748 9.46091 11.1233 9.41084 11.1733C9.36739 11.2167 9.32394 11.26 9.27918 11.3047C9.15083 11.4259 9.01744 11.5357 8.87803 11.6439C8.90989 11.9181 9.03476 12.1298 9.16788 12.3663C9.19188 12.4092 9.21589 12.452 9.24063 12.4962C9.62094 13.1614 10.0764 13.7837 10.5694 14.3698C10.6035 14.4107 10.6035 14.4107 10.6382 14.4524C11.3012 15.246 12.0002 16.0394 12.7869 16.713C12.8842 16.7964 12.9805 16.8807 13.0763 16.9656C13.8044 17.6065 14.582 18.195 15.4252 18.6768C15.4566 18.6951 15.488 18.7135 15.5203 18.7324C15.6166 18.7885 15.7134 18.8436 15.8105 18.8982C15.8674 18.9304 15.9243 18.9625 15.9829 18.9956C16.1515 19.0654 16.1877 19.0662 16.3527 19.0039C16.4515 18.9276 16.4515 18.9276 16.5441 18.8286C16.5805 18.7916 16.617 18.7546 16.6546 18.7166C16.713 18.6562 16.713 18.6562 16.7725 18.5946C16.8133 18.5532 16.8541 18.5118 16.8961 18.4692C17.0704 18.2923 17.2438 18.1145 17.4172 17.9368C17.5441 17.807 17.6715 17.6777 17.7989 17.5485C17.8563 17.4891 17.8563 17.4891 17.9149 17.4285C18.2743 17.0642 18.6718 16.7458 19.1523 16.5574C19.2049 16.5361 19.2576 16.5149 19.3119 16.4931C20.0042 16.2563 20.7377 16.3666 21.3858 16.6766C21.6281 16.8203 21.8328 16.9878 22.0365 17.1807C22.0707 17.2129 22.105 17.2452 22.1403 17.2783C22.7006 17.8096 23.2451 18.3573 23.7911 18.9031C23.9555 19.0673 24.1202 19.2312 24.285 19.3949C24.4138 19.523 24.5423 19.6513 24.6708 19.7797C24.7314 19.8402 24.7921 19.9006 24.8529 19.9609C25.6089 20.7116 26.2716 21.4555 26.2996 22.5646C26.2797 23.7414 25.5702 24.5284 24.7762 25.3269C24.7277 25.3758 24.6792 25.4248 24.6292 25.4752C24.5274 25.5777 24.4254 25.6801 24.3233 25.7823C24.2199 25.8859 24.117 25.9899 24.0145 26.0943C22.9168 27.2108 22.9168 27.2108 22.2997 27.5087C22.2434 27.5359 22.1871 27.5631 22.1291 27.5912C20.5086 28.3392 18.5258 27.9312 16.8983 27.3996C16.8509 27.3842 16.8036 27.3687 16.7548 27.3528C13.5254 26.2789 10.4899 24.3071 8.00508 22.0024C7.94434 21.9467 7.8836 21.891 7.82286 21.8354C6.43283 20.5564 6.43283 20.5564 5.88237 19.854C5.75345 19.6944 5.6152 19.5452 5.47488 19.3957C5.14939 19.046 4.85736 18.6748 4.56783 18.2951C4.53687 18.2549 4.50592 18.2147 4.47402 18.1733C3.21464 16.5359 2.1368 14.7856 1.29425 12.8979C1.26837 12.8413 1.24249 12.7847 1.21582 12.7264C0.301543 10.6733 -0.456637 8.19911 0.325822 5.9877C0.662724 5.16913 1.25606 4.59007 1.87427 3.97804C2.04158 3.81196 2.20606 3.64658 2.35816 3.46625C3.57287 2.03974 5.23036 0.9069 7.023 2.15782ZM4.40415 3.79335C4.08336 4.09739 3.77044 4.40956 3.45679 4.72091C3.35645 4.82026 3.25582 4.91933 3.1549 5.01809C3.00785 5.16203 2.86174 5.30685 2.71579 5.45189C2.67111 5.4953 2.62643 5.53871 2.5804 5.58343C1.91105 6.25473 1.66129 7.05431 1.66272 7.98703C1.67631 8.87199 1.89811 9.71557 2.16721 10.5536C2.18335 10.6046 2.19949 10.6555 2.21612 10.708C2.80539 12.5368 3.74652 14.268 4.84062 15.8418C4.86381 15.8753 4.88699 15.9088 4.91087 15.9432C5.43525 16.6971 5.99532 17.4289 6.58653 18.1316C6.62221 18.1742 6.62221 18.1742 6.65862 18.2176C7.40961 19.1123 8.20418 20.0091 9.09754 20.7651C9.23313 20.8813 9.36385 21.0023 9.49523 21.1233C9.79033 21.3912 10.0926 21.6467 10.4057 21.8933C10.4438 21.9235 10.4818 21.9537 10.5211 21.9848C13.2483 24.1383 17.076 26.6123 20.7174 26.3093C21.4484 26.203 22.0986 25.759 22.5646 25.1997C22.751 24.9847 22.9499 24.7847 23.1526 24.5851C23.1855 24.5527 23.2184 24.5202 23.2524 24.4868C23.39 24.3512 23.5278 24.2158 23.6661 24.081C23.7681 23.9813 23.8696 23.8812 23.971 23.781C24.0018 23.7512 24.0326 23.7215 24.0643 23.6908C24.3695 23.3878 24.6255 23.0582 24.6628 22.6191C24.6426 21.8244 23.6596 21.1157 23.1315 20.5834C23.0996 20.5513 23.0677 20.5191 23.0349 20.486C22.8668 20.3165 22.6984 20.1473 22.53 19.9781C22.3919 19.8394 22.2542 19.7003 22.1168 19.5609C21.9491 19.3905 21.7806 19.2209 21.6117 19.0517C21.5481 18.9878 21.4847 18.9236 21.4216 18.8593C20.8745 18.274 20.8745 18.274 20.1446 18.0139C19.6048 18.0374 19.2653 18.4171 18.9125 18.782C18.8168 18.8791 18.7211 18.9763 18.6253 19.0735C18.4761 19.226 18.3271 19.3786 18.1782 19.5315C18.0336 19.6796 17.8883 19.8271 17.7429 19.9745C17.6773 20.0425 17.6773 20.0425 17.6104 20.1119C17.2922 20.4339 16.9498 20.7304 16.5042 20.8502C15.9444 20.8518 15.5228 20.6293 15.0433 20.3668C14.9805 20.3331 14.9805 20.3331 14.9165 20.2987C13.7594 19.6725 12.704 18.869 11.7373 17.9787C11.6269 17.878 11.5148 17.7803 11.4016 17.6829C11.1585 17.4708 10.9299 17.246 10.7024 17.0174C10.6633 16.9785 10.6242 16.9397 10.584 16.8997C10.3314 16.6469 10.093 16.3854 9.8601 16.1144C9.8096 16.0573 9.75902 16.0002 9.70836 15.9432C7.12292 13.0034 7.12292 13.0034 7.10314 11.415C7.17882 11.0163 7.40338 10.741 7.69136 10.4684C7.73514 10.4254 7.73514 10.4254 7.7798 10.3816C7.93804 10.2278 8.10087 10.0808 8.26807 9.93685C8.53018 9.70937 8.77574 9.46642 9.02125 9.2213C9.06598 9.17727 9.11071 9.13324 9.15679 9.08788C9.7426 8.52484 9.7426 8.52484 9.96922 7.77317C9.8914 7.06075 9.04293 6.45632 8.56197 5.97429C8.52671 5.9389 8.49145 5.90352 8.45513 5.86706C8.26917 5.68044 8.08307 5.49396 7.89682 5.30763C7.70512 5.11576 7.51392 4.9234 7.32284 4.73092C7.17497 4.58215 7.02674 4.43375 6.87841 4.28544C6.80773 4.21465 6.73719 4.14373 6.66679 4.07267C6.56851 3.97353 6.46973 3.87493 6.37081 3.77644C6.34215 3.7473 6.31348 3.71815 6.28395 3.68813C5.6242 3.03622 5.00945 3.22989 4.40415 3.79335Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16.5199 0.174934C16.5793 0.18985 16.6386 0.204766 16.6998 0.220135C19.0004 0.807965 21.0991 1.85524 22.8999 3.41194C22.9461 3.45101 22.9922 3.49009 23.0397 3.53034C23.7179 4.121 24.3728 4.76815 24.9186 5.48362C24.9612 5.53682 25.0039 5.59002 25.0478 5.64483C25.9118 6.7286 26.5856 7.94182 27.1032 9.22476C27.1497 9.33979 27.1973 9.45422 27.2453 9.56863C27.6023 10.459 28.1233 11.7623 27.974 12.7345C27.845 12.9971 27.6912 13.1509 27.4284 13.2797C27.1203 13.3289 26.8722 13.2929 26.61 13.1161C26.4323 12.9236 26.3568 12.7721 26.3022 12.5171C26.288 12.4533 26.2737 12.3896 26.259 12.324C26.2443 12.2559 26.2296 12.1879 26.2144 12.1178C25.7833 10.2258 25.0419 8.43183 23.8481 6.88937C23.7716 6.79047 23.6963 6.69079 23.6209 6.59102C23.3153 6.19026 22.9924 5.83181 22.6271 5.48362C22.4988 5.35658 22.3715 5.22909 22.2471 5.09816C20.6051 3.38913 18.1695 2.24076 15.8664 1.77533C15.8223 1.76628 15.7781 1.75723 15.7326 1.7479C15.6487 1.73112 15.5647 1.71523 15.4804 1.70044C15.1917 1.6434 15.035 1.54812 14.8251 1.34026C14.6801 1.09256 14.6345 0.905128 14.6847 0.627262C14.7527 0.399782 14.8679 0.242982 15.0593 0.105642C15.4983 -0.113786 16.0691 0.0584671 16.5199 0.174934Z"
+                                            fill="white" />
+                                        <path
+                                            d="M19.4797 6.82698C19.8429 7.11645 20.1715 7.44506 20.4996 7.77295C20.533 7.80373 20.5663 7.83451 20.6007 7.86623C21.815 9.00484 22.8622 11.0283 22.9241 12.7034C22.9163 12.9723 22.8726 13.133 22.682 13.3338C22.4751 13.4958 22.2884 13.5381 22.0273 13.5519C21.7629 13.4979 21.5418 13.3832 21.3726 13.1702C21.2941 12.9943 21.2529 12.8122 21.2089 12.625C20.8303 11.1265 20.2056 9.92029 19.1356 8.80879C19.1019 8.77098 19.0681 8.73317 19.0333 8.69422C18.0844 7.66554 16.6675 7.05326 15.3241 6.76176C14.9839 6.68774 14.7483 6.63243 14.5443 6.33823C14.4349 6.12106 14.4272 5.94129 14.4435 5.70127C14.5468 5.41466 14.6905 5.27229 14.9346 5.10157C16.3202 4.70597 18.4313 6.02654 19.4797 6.82698Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <span>Call Us On</span>
+                                    <a href="tel:(+977)-9851218358">(+977)-9851 218 358</a>
+                                </div>
+                            </li>
+                            <li class="single-information">
+                                <div class="icon two">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.4531 -0.000438996C27.7209 0.123872 27.8793 0.277054 28 0.546436C28.0615 1.18415 27.9399 1.82183 27.8443 2.45008C27.8274 2.56384 27.8106 2.6776 27.7938 2.79136C27.7479 3.10071 27.7015 3.40996 27.6548 3.71919C27.6051 4.04964 27.5561 4.38019 27.507 4.71072C27.4175 5.31246 27.3275 5.91412 27.2372 6.51575C27.1547 7.06586 27.0723 7.616 26.9902 8.16618C26.9848 8.20252 26.9793 8.23886 26.9738 8.27631C26.9463 8.46009 26.9189 8.64387 26.8915 8.82765C26.8365 9.19568 26.7816 9.56371 26.7266 9.93173C26.7212 9.96814 26.7157 10.0045 26.7101 10.042C26.6332 10.5573 26.5561 11.0725 26.479 11.5877C26.2357 13.2128 25.9938 14.8381 25.7552 16.4639C25.7028 16.8211 25.6503 17.1784 25.5976 17.5356C25.5904 17.5842 25.5833 17.6327 25.5759 17.6827C25.5478 17.8737 25.5196 18.0647 25.4914 18.2557C25.4118 18.7956 25.3325 19.3356 25.2539 19.8757C25.2057 20.2064 25.157 20.5371 25.1079 20.8678C25.0802 21.0541 25.0527 21.2406 25.026 21.4271C24.9974 21.6256 24.9678 21.8239 24.9381 22.0222C24.9261 22.1076 24.9261 22.1076 24.9139 22.1947C24.8533 22.5892 24.7649 22.9298 24.4693 23.211C24.2159 23.3734 23.9722 23.3859 23.6797 23.3511C23.3895 23.2756 23.1081 23.1766 22.8252 23.0777C22.7391 23.0482 22.6529 23.0187 22.5666 22.9893C22.3802 22.9256 22.1939 22.8615 22.0077 22.7971C21.703 22.6919 21.3978 22.5885 21.0925 22.4853C20.0106 22.1193 18.9304 21.7485 17.8521 21.3721C17.8035 21.3552 17.7549 21.3382 17.7048 21.3207C17.1436 21.1247 16.583 20.927 16.0235 20.7261C16.0083 20.7581 15.9931 20.7901 15.9775 20.823C15.9172 20.9389 15.8515 21.0395 15.7748 21.145C15.747 21.1834 15.7193 21.2217 15.6906 21.2612C15.6606 21.3023 15.6306 21.3434 15.5996 21.3858C15.5682 21.4291 15.5367 21.4724 15.5042 21.5171C15.1829 21.9587 14.8587 22.3983 14.5341 22.8375C14.3741 23.0542 14.2144 23.271 14.0547 23.4878C13.9909 23.5744 13.9271 23.661 13.8633 23.7476C13.8317 23.7905 13.8001 23.8333 13.7676 23.8775C13.6719 24.0074 13.5762 24.1373 13.4805 24.2671C13.4489 24.31 13.4173 24.3529 13.3847 24.3972C13.3212 24.4833 13.2577 24.5694 13.1942 24.6556C13.0298 24.8787 12.8654 25.102 12.7014 25.3254C12.6507 25.3944 12.6507 25.3944 12.599 25.4648C12.5351 25.5517 12.4713 25.6387 12.4076 25.7257C11.6644 26.7364 11.6644 26.7364 11.3203 26.8511C11.0088 26.882 10.7665 26.8668 10.5 26.6871C10.2511 26.4243 10.1581 26.1845 10.1587 25.8249C10.1585 25.7305 10.1585 25.7305 10.1583 25.6342C10.1589 25.5313 10.1589 25.5313 10.1595 25.4264C10.1595 25.3531 10.1595 25.2798 10.1594 25.2065C10.1594 25.0078 10.16 24.8092 10.1608 24.6106C10.1615 24.4029 10.1616 24.1952 10.1617 23.9874C10.162 23.5943 10.1629 23.2011 10.164 22.808C10.1652 22.3603 10.1658 21.9126 10.1664 21.4649C10.1675 20.5442 10.1695 19.6234 10.1719 18.7027C10.1324 18.6921 10.093 18.6816 10.0523 18.6707C9.7752 18.596 9.50006 18.5198 9.22811 18.4276C9.16777 18.4072 9.10743 18.3869 9.04526 18.3659C8.94988 18.3334 8.94987 18.3334 8.85256 18.3002C8.78458 18.2772 8.71659 18.2542 8.64655 18.2305C8.46367 18.1685 8.28088 18.1064 8.0981 18.0441C7.98339 18.0051 7.86866 17.9661 7.75392 17.9272C6.74194 17.5837 5.73137 17.2364 4.72338 16.8814C4.18158 16.691 3.63831 16.5053 3.09366 16.3232C2.98244 16.286 2.87124 16.2488 2.76005 16.2115C2.68589 16.1866 2.61174 16.1617 2.53758 16.1369C2.50087 16.1246 2.46415 16.1122 2.42632 16.0996C2.2085 16.0266 1.99051 15.9541 1.77238 15.882C1.60392 15.8262 1.43571 15.7697 1.26745 15.7132C1.2066 15.6933 1.14576 15.6734 1.08307 15.6529C0.700793 15.5239 0.316443 15.3912 0.0562058 15.0692C-0.0483443 14.8088 -0.0335776 14.5481 2.29087e-05 14.273C0.192896 13.873 0.543649 13.6882 0.925011 13.4967C0.96673 13.4754 1.00845 13.4541 1.05143 13.4322C1.18617 13.3636 1.32113 13.2953 1.45608 13.2271C1.59528 13.1563 1.73441 13.0853 1.87355 13.0144C1.96454 12.968 2.05555 12.9216 2.14657 12.8753C2.45998 12.7158 2.7723 12.5544 3.08303 12.3897C3.12162 12.3693 3.16021 12.3488 3.19996 12.3278C3.27708 12.287 3.35418 12.2462 3.43129 12.2053C3.67705 12.0756 3.92354 11.9473 4.16994 11.8189C4.22274 11.7914 4.27553 11.7638 4.32992 11.7355C4.4372 11.6796 4.54449 11.6236 4.65177 11.5677C4.91503 11.4305 5.17823 11.2932 5.44143 11.1558C5.54625 11.1011 5.65106 11.0464 5.75588 10.9917C5.83371 10.9511 5.83371 10.9511 5.91311 10.9097C6.38479 10.6636 6.38479 10.6636 6.54207 10.5816C6.64671 10.527 6.75135 10.4724 6.85599 10.4178C7.12073 10.2796 7.38549 10.1415 7.65029 10.0035C8.13129 9.75279 8.61209 9.50173 9.09182 9.24858C9.57862 8.99176 10.0674 8.73872 10.5561 8.48567C10.9549 8.27907 11.353 8.07102 11.7501 7.86132C12.1664 7.64174 12.5841 7.42501 13.0018 7.20814C13.3419 7.03142 13.6816 6.85381 14.0205 6.67485C14.505 6.4191 14.9915 6.16723 15.478 5.91534C15.8768 5.70875 16.2748 5.50071 16.672 5.291C17.0883 5.07143 17.506 4.8547 17.9237 4.63782C18.2638 4.46111 18.6035 4.2835 18.9424 4.10454C19.3629 3.88258 19.7848 3.66348 20.2071 3.44487C20.6729 3.20369 21.1381 2.96142 21.6021 2.71661C22.0943 2.45695 22.5879 2.19994 23.0815 1.94273C23.3447 1.8055 23.6079 1.66815 23.8711 1.53081C24.1881 1.3654 24.5051 1.20003 24.8222 1.03478C24.8752 1.00709 24.9283 0.979404 24.983 0.950878C25.0886 0.895841 25.1944 0.840973 25.3002 0.786281C25.551 0.656329 25.7995 0.52393 26.0447 0.383655C26.9461 -0.126586 26.9461 -0.126586 27.4531 -0.000438996ZM25.6036 3.8106C25.3667 4.04832 25.1385 4.28945 24.92 4.54418C24.7996 4.68024 24.6706 4.80615 24.541 4.9334C24.4408 5.0354 24.3473 5.14124 24.2539 5.24956C24.1034 5.42434 23.9451 5.58711 23.7805 5.7486C23.6834 5.84742 23.5925 5.9492 23.5022 6.05428C23.3016 6.28496 23.0936 6.50775 22.8833 6.72954C22.8059 6.81149 22.7285 6.89345 22.6511 6.97542C22.6126 7.01616 22.5742 7.0569 22.5345 7.09887C22.3665 7.27711 22.1993 7.45613 22.0323 7.6353C22.0011 7.66869 21.97 7.70207 21.9379 7.73647C21.8753 7.80359 21.8128 7.87071 21.7502 7.93785C21.5914 8.10824 21.4324 8.2785 21.2735 8.44878C21.242 8.48255 21.2104 8.51631 21.178 8.5511C21.0172 8.72341 20.8563 8.89568 20.6954 9.06786C20.3961 9.38816 20.0973 9.70883 19.8003 10.0313C19.4876 10.3708 19.1718 10.7075 18.8559 11.0441C18.6576 11.2553 18.4598 11.4669 18.2622 11.6788C18.2309 11.7124 18.1995 11.746 18.1672 11.7806C18.104 11.8484 18.0408 11.9161 17.9777 11.9838C17.8504 12.1203 17.7231 12.2566 17.5958 12.393C17.5321 12.4613 17.4683 12.5296 17.4045 12.598C17.2437 12.7703 17.0829 12.9425 16.922 13.1147C16.6227 13.435 16.3238 13.7557 16.0269 14.0782C15.7141 14.4177 15.3984 14.7544 15.0825 15.091C14.7893 15.4033 14.4971 15.7167 14.2049 16.03C14.1075 16.1344 14.01 16.2387 13.9124 16.343C13.5199 16.7628 13.1296 17.1844 12.7422 17.6089C12.8225 17.7696 12.9478 17.7798 13.11 17.8348C13.1548 17.8496 13.1997 17.8644 13.2459 17.8796C13.2928 17.8954 13.3396 17.9112 13.3878 17.9274C13.4899 17.9618 13.592 17.996 13.6942 18.03C13.973 18.1228 14.2512 18.217 14.5296 18.3109C14.5868 18.3302 14.6441 18.3494 14.7031 18.3693C15.1808 18.5304 15.6566 18.6964 16.132 18.864C17.4643 19.3331 18.8033 19.7825 20.142 20.2329C20.3196 20.2927 20.4972 20.3525 20.6748 20.4123C20.7607 20.4412 20.8467 20.4701 20.9326 20.499C21.512 20.6939 22.0903 20.8913 22.6656 21.0978C22.7341 21.122 22.7341 21.122 22.8039 21.1468C22.8622 21.1677 22.8622 21.1677 22.9217 21.1891C23.0321 21.2259 23.0321 21.2259 23.1875 21.2183C23.4222 19.8644 23.6237 18.506 23.8241 17.1467C23.8705 16.8315 23.9172 16.5163 23.9639 16.2011C24.0524 15.6027 24.1408 15.0041 24.2292 14.4056C24.3567 13.5414 24.4845 12.6771 24.6123 11.8129C24.6316 11.6826 24.6508 11.5524 24.6701 11.4221C24.6843 11.326 24.6843 11.326 24.6988 11.2279C24.7556 10.844 24.8123 10.46 24.869 10.0761C25.034 8.95797 25.1991 7.83982 25.3679 6.72221C25.3882 6.58749 25.4085 6.45277 25.4288 6.31804C25.4417 6.23266 25.4545 6.14727 25.4674 6.06189C25.4736 6.02098 25.4797 5.98006 25.4861 5.9379C25.5212 5.70487 25.5566 5.47189 25.5923 5.23893C25.6182 5.06863 25.6439 4.89828 25.6696 4.72793C25.6787 4.66894 25.6878 4.60995 25.6972 4.54917C25.7392 4.26872 25.7681 4.00191 25.7578 3.71831C25.6872 3.71211 25.6872 3.71211 25.6036 3.8106ZM22.6406 4.2105C22.4907 4.27225 22.4907 4.27225 22.3196 4.36538C22.2874 4.38217 22.2551 4.39896 22.222 4.41627C22.1163 4.47145 22.0111 4.52725 21.9058 4.58306C21.8328 4.62136 21.7597 4.65963 21.6867 4.69785C21.5074 4.79178 21.3284 4.88617 21.1494 4.98077C21.0219 5.04814 20.8942 5.11522 20.7665 5.18227C20.6036 5.26789 20.4408 5.35373 20.278 5.43969C19.9634 5.60554 19.6477 5.76927 19.3321 5.93315C18.9327 6.14052 18.5337 6.34854 18.1358 6.55864C17.6512 6.81444 17.1646 7.06636 16.678 7.31827C16.3225 7.50246 15.9674 7.68754 15.6133 7.87456C15.1951 8.09543 14.7755 8.31339 14.3555 8.53081C13.8896 8.772 13.4244 9.01427 12.9605 9.25908C12.4682 9.51874 11.9746 9.77574 11.4811 10.033C11.2178 10.1702 10.9546 10.3075 10.6914 10.4449C10.5866 10.4996 10.4818 10.5542 10.377 10.6089C10.3251 10.636 10.2732 10.6631 10.2198 10.691C9.74807 10.9371 9.74807 10.9371 9.59079 11.0191C9.48615 11.0737 9.38151 11.1283 9.27687 11.1829C9.01213 11.3211 8.74737 11.4591 8.48257 11.5972C8.00157 11.8479 7.52077 12.099 7.04104 12.3521C6.61825 12.5752 6.19405 12.7954 5.76955 13.0152C4.90059 13.4652 4.03469 13.9207 3.1719 14.3824C3.32441 14.4841 3.44151 14.5339 3.61346 14.5915C3.67054 14.6108 3.72762 14.6301 3.78644 14.65C3.8487 14.6707 3.91097 14.6915 3.97512 14.7128C4.04014 14.7347 4.10516 14.7567 4.17215 14.7792C4.31237 14.8264 4.45262 14.8736 4.59292 14.9206C4.9624 15.0444 5.33158 15.1691 5.70077 15.2937C5.73776 15.3062 5.77476 15.3187 5.81288 15.3315C6.43808 15.5425 7.06175 15.7576 7.68432 15.9763C8.39865 16.2271 9.11313 16.4776 9.83014 16.7206C9.90881 16.7474 9.98742 16.7743 10.066 16.8015C10.1722 16.8382 10.2787 16.8742 10.3853 16.91C10.4745 16.9404 10.4745 16.9404 10.5656 16.9714C10.7199 17.0076 10.7928 17.0126 10.9375 16.9527C11.0414 16.8587 11.0414 16.8587 11.1426 16.7339C11.3746 16.4668 11.6137 16.2081 11.857 15.9512C12.1182 15.6746 12.3787 15.3973 12.6363 15.1172C12.9466 14.7798 13.2601 14.4455 13.5738 14.1113C13.8671 13.7988 14.1593 13.4854 14.4516 13.172C14.5483 13.0683 14.6451 12.9647 14.7419 12.8612C15.0413 12.5408 15.3402 12.2201 15.6372 11.8975C15.95 11.558 16.2657 11.2213 16.5817 10.8847C16.8749 10.5723 17.1671 10.2588 17.4594 9.94545C17.5561 9.84178 17.6529 9.73818 17.7498 9.6346C18.0491 9.31424 18.348 8.99349 18.645 8.67095C18.9578 8.3314 19.2735 7.99472 19.5895 7.65816C19.8827 7.34572 20.175 7.03227 20.4672 6.71889C20.5639 6.61522 20.6607 6.51162 20.7576 6.40804C21.0844 6.05829 21.4104 5.70785 21.7348 5.35577C22.0714 4.9906 22.4108 4.62798 22.75 4.26519C22.7139 4.24714 22.6778 4.22909 22.6406 4.2105ZM11.9766 19.3589C11.9766 20.6222 11.9766 21.8855 11.9766 23.1871C12.1573 23.0064 12.2897 22.8442 12.4346 22.6368C12.6573 22.3204 12.8846 22.0078 13.1148 21.6968C13.2459 21.5192 13.3769 21.3414 13.5078 21.1636C13.5591 21.094 13.5591 21.094 13.6115 21.0229C13.7117 20.8866 13.8115 20.75 13.9112 20.6133C13.9421 20.5713 13.973 20.5293 14.0049 20.4861C14.033 20.4473 14.0612 20.4086 14.0902 20.3687C14.1151 20.3347 14.14 20.3006 14.1657 20.2655C14.2283 20.1806 14.2283 20.1806 14.2188 20.0699C13.9259 19.9683 13.633 19.8671 13.3399 19.7661C13.2402 19.7317 13.1405 19.6973 13.0409 19.6627C12.8978 19.613 12.7545 19.5637 12.6113 19.5145C12.5667 19.4989 12.522 19.4834 12.4761 19.4673C12.4345 19.4531 12.3929 19.4389 12.35 19.4242C12.3135 19.4116 12.2769 19.3989 12.2393 19.3859C12.1313 19.3517 12.1313 19.3517 11.9766 19.3589Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <span>Send Mail</span>
+                                    <a href="mailto:info@natureheaventrek.com"><span class="__cf_email__" data-cfemail="bdd4d3dbd2fdd8c5dcd0cdd1d893ded2d0">info@natureheaventrek.com</span></a>
+                                    <a href="mailto:natureheaventrek@gmail.com"><span class="__cf_email__" data-cfemail="036b666f6f6c43667b626e736f662d606c6e">natureheaventrek@gmail.com</span></a>
+                                </div>
+                            </li>
+                            <li class="single-information">
+                                <div class="icon newbg">
+                                    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M16 3C9.372 3 4 8.372 4 15c0 2.64.86 5.08 2.32 7.04L5 29l7.18-1.88A11.94 11.94 0 0 0 16 27c6.628 0 12-5.372 12-12S22.628 3 16 3zm0 21.8c-1.96 0-3.86-.52-5.52-1.52l-.4-.24-4.26 1.12 1.14-4.14-.26-.42A9.8 9.8 0 1 1 16 24.8zm5.54-7.34c-.3-.16-1.78-.88-2.06-.98-.28-.1-.48-.16-.68.16-.2.3-.78.98-.96 1.18-.18.2-.36.22-.66.08-.3-.16-1.28-.46-2.44-1.46-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.14-.62.14-.14.3-.36.44-.54.14-.18.18-.3.28-.5.1-.2.06-.38-.02-.54-.08-.16-.68-1.64-.94-2.24-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.52.08-.8.38-.28.3-1.06 1.04-1.06 2.54s1.08 2.96 1.24 3.16c.16.2 2.14 3.26 5.18 4.56.72.3 1.28.48 1.72.62.72.22 1.38.2 1.9.12.58-.08 1.78-.72 2.04-1.42.26-.7.26-1.3.18-1.42-.08-.12-.28-.2-.58-.36z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <a href="https://wa.me/+9779851218358"> +977 9851 218 358 </a>
+                                </div>
+                            </li>
+                            <li class="single-information">
+                                <div class="icon four">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.1878 0.218357C16.2286 0.229178 16.2694 0.239999 16.3114 0.251148C17.8629 0.676726 19.1712 1.48072 20.344 2.56992C20.3968 2.61729 20.3968 2.61729 20.4506 2.66562C21.9203 4.04598 22.945 6.28256 23.0325 8.29603C23.0533 10.2568 23.0533 10.2568 22.8596 11.0465C22.8433 11.1146 22.8433 11.1146 22.8267 11.1841C22.5144 12.4543 21.9383 13.5708 21.2073 14.6475C21.0282 14.9124 20.857 15.1822 20.6858 15.4522C20.6534 15.5033 20.621 15.5544 20.5876 15.607C20.5212 15.7117 20.4549 15.8164 20.3885 15.9212C20.2282 16.1741 20.0674 16.4267 19.9065 16.6793C19.8437 16.778 19.7809 16.8767 19.7181 16.9754C19.3981 17.4782 19.0781 17.9811 18.7581 18.484C18.8043 18.4899 18.8505 18.4958 18.8982 18.5019C19.3733 18.5658 19.8362 18.654 20.303 18.7643C20.338 18.7725 20.373 18.7808 20.4091 18.7893C22.2813 19.2327 24.8291 19.8973 25.9221 21.6559C26.3055 22.3425 26.4041 22.9819 26.2731 23.7588C25.9488 24.8665 24.9618 25.5696 24.0039 26.1101C22.2226 27.0719 20.1747 27.4908 18.1873 27.7706C18.1493 27.776 18.1114 27.7815 18.0723 27.7871C16.7688 27.971 15.4632 28.0204 14.1484 28.017C14.0291 28.0167 13.9099 28.0166 13.7906 28.0164C12.6138 28.0147 11.45 27.9851 10.2815 27.8355C10.1823 27.8237 10.1823 27.8237 10.0811 27.8116C7.77266 27.5329 5.08064 27.0213 3.17213 25.5934C3.09484 25.5361 3.09484 25.5361 3.01598 25.4778C2.38702 24.9894 1.86659 24.3673 1.69557 23.5699C1.61144 22.608 1.81942 21.9372 2.43727 21.1944C4.0498 19.4417 6.82414 18.8613 9.07838 18.484C9.13252 18.484 9.18667 18.484 9.24245 18.484C8.835 17.8377 8.4261 17.1924 8.01561 16.5481C7.88706 16.3463 7.75875 16.1444 7.63066 15.9423C7.5675 15.8427 7.50434 15.7432 7.44118 15.6436C7.4099 15.5943 7.37863 15.5449 7.34641 15.4941C7.18131 15.2343 7.01418 14.9762 6.84367 14.7199C5.39251 12.5367 4.56601 10.0748 5.06911 7.43027C5.10678 7.24896 5.1495 7.06957 5.19557 6.89023C5.20581 6.84874 5.21605 6.80726 5.2266 6.76451C5.374 6.17849 5.58886 5.62892 5.85182 5.08554C5.86867 5.05072 5.88552 5.01589 5.90288 4.98001C6.99322 2.76313 8.95545 1.17559 11.2678 0.371872C11.4477 0.313289 11.6294 0.264725 11.8128 0.218357C11.8735 0.20239 11.8735 0.20239 11.9355 0.1861C13.279 -0.152893 14.8501 -0.137354 16.1878 0.218357ZM12.2503 1.85898C12.1837 1.8775 12.1837 1.8775 12.1157 1.89639C10.1319 2.46779 8.52269 3.74913 7.51141 5.55355C7.1128 6.29023 6.88006 7.05406 6.72682 7.87461C6.71721 7.9255 6.70759 7.97639 6.69769 8.02883C6.56858 8.9074 6.59685 9.97234 6.8362 10.8277C6.85428 10.8933 6.85428 10.8933 6.87273 10.9603C7.14911 11.9306 7.5924 12.7859 8.16237 13.6142C8.3422 13.8763 8.51183 14.1447 8.6819 14.4132C8.71439 14.4644 8.74688 14.5156 8.78035 14.5684C8.84681 14.6732 8.91324 14.778 8.97964 14.8828C9.13757 15.1321 9.29595 15.381 9.45436 15.63C9.50128 15.7037 9.50128 15.7037 9.54916 15.779C9.79263 16.1615 10.037 16.5435 10.2815 16.9254C10.6523 17.5044 11.0218 18.0841 11.3907 18.6644C11.5495 18.9142 11.7085 19.1639 11.8674 19.4137C11.9312 19.5139 11.9951 19.6142 12.0589 19.7144C12.0904 19.7641 12.122 19.8137 12.1546 19.8648C12.2503 20.0152 12.346 20.1656 12.4417 20.316C12.4733 20.3657 12.5049 20.4154 12.5375 20.4666C12.6008 20.5661 12.6641 20.6656 12.7275 20.7651C12.8943 21.0274 13.0613 21.2897 13.2284 21.5518C13.2632 21.6064 13.298 21.661 13.3339 21.7173C13.4005 21.8218 13.4671 21.9264 13.5338 22.0309C13.5789 22.1017 13.5789 22.1017 13.6249 22.1739C13.6513 22.2152 13.6776 22.2565 13.7048 22.2991C13.7612 22.3891 13.8147 22.4809 13.8665 22.5737C13.8926 22.6137 13.9187 22.6537 13.9456 22.6949C13.9817 22.6949 14.0178 22.6949 14.0549 22.6949C14.1345 22.5917 14.1345 22.5917 14.2143 22.4559C14.2465 22.4037 14.2786 22.3515 14.3117 22.2978C14.364 22.2118 14.364 22.2118 14.4173 22.1241C14.492 22.0027 14.5669 21.8814 14.6418 21.7601C14.6707 21.7131 14.6707 21.7131 14.7002 21.6652C14.8996 21.3419 15.104 21.0219 15.3093 20.7022C15.3455 20.6459 15.3817 20.5895 15.4189 20.5314C15.4924 20.4168 15.566 20.3023 15.6395 20.1877C15.8248 19.8991 16.0097 19.6103 16.1946 19.3214C16.2309 19.2647 16.2672 19.208 16.3046 19.1496C16.6677 18.582 17.0294 18.0135 17.3909 17.4449C17.8278 16.7576 18.2656 16.0709 18.7049 15.3851C18.9798 14.9559 19.2539 14.5261 19.5265 14.0955C19.669 13.8708 19.8125 13.6471 19.9612 13.4265C20.8539 12.097 21.3511 10.6858 21.3489 9.07431C21.3489 9.0374 21.3488 9.00049 21.3488 8.96247C21.3417 7.0393 20.5737 5.36 19.3049 3.93711C19.253 3.87821 19.253 3.87821 19.2001 3.81812C18.0574 2.59977 16.282 1.77913 14.6245 1.68362C14.4209 1.67837 14.2177 1.6769 14.0139 1.67783C13.978 1.67797 13.942 1.6781 13.905 1.67824C13.3362 1.68156 12.7998 1.70588 12.2503 1.85898ZM3.62801 22.4431C3.42965 22.6814 3.34885 22.9114 3.36226 23.2187C3.47096 23.7217 3.92475 24.0631 4.33344 24.3296C6.16787 25.4823 8.41603 25.9041 10.5379 26.1539C10.5764 26.1585 10.615 26.163 10.6548 26.1677C11.4458 26.2596 12.234 26.3125 13.0306 26.3154C13.1021 26.3158 13.1737 26.3162 13.2474 26.3166C13.4767 26.3176 13.706 26.3179 13.9353 26.318C13.9744 26.318 14.0135 26.318 14.0538 26.318C15.2465 26.3184 16.4258 26.3013 17.6096 26.1402C17.6838 26.1305 17.7579 26.1207 17.832 26.1109C18.8106 25.98 19.7732 25.7964 20.7268 25.5387C20.7756 25.5256 20.8243 25.5126 20.8745 25.4992C22.0946 25.1679 23.4689 24.6977 24.3362 23.734C24.3616 23.7061 24.3871 23.6781 24.4133 23.6494C24.592 23.4323 24.6507 23.2607 24.6321 22.9788C24.5452 22.5149 24.1498 22.1828 23.7874 21.9169C22.2607 20.8742 19.5838 19.8687 17.719 20.0699C17.609 20.1684 17.609 20.1684 17.5295 20.3083C17.4813 20.3836 17.4813 20.3836 17.4321 20.4603C17.4005 20.512 17.3688 20.5636 17.3362 20.6168C17.2769 20.7083 17.2176 20.7997 17.1582 20.8911C17.0978 20.9864 17.0375 21.0818 16.9773 21.1773C16.91 21.2836 16.8427 21.3898 16.7754 21.4961C16.7414 21.5498 16.7075 21.6036 16.6724 21.659C16.5114 21.9134 16.3496 22.1675 16.1878 22.4215C15.9923 22.7285 15.7969 23.0356 15.602 23.3431C15.4151 23.6378 15.2274 23.9321 15.0393 24.2262C15.0035 24.2823 15.0035 24.2823 14.967 24.3396C14.9072 24.4331 14.8469 24.5262 14.7864 24.6192C14.7397 24.6915 14.7397 24.6915 14.692 24.7651C14.5551 24.9433 14.4316 25.0303 14.219 25.1012C13.9031 25.1219 13.7322 25.1033 13.4534 24.9371C13.127 24.5911 12.8929 24.1414 12.6479 23.7356C12.4779 23.4539 12.3035 23.1757 12.1238 22.9C11.8924 22.5449 11.6638 22.1881 11.4368 21.8302C11.1755 21.4188 10.9126 21.0085 10.6472 20.5997C10.6168 20.5527 10.5863 20.5056 10.5549 20.4571C10.5269 20.4142 10.4989 20.3712 10.4701 20.3269C10.4332 20.2701 10.4332 20.2701 10.3955 20.2121C10.3414 20.1264 10.3414 20.1264 10.2815 20.0699C8.21865 19.9814 5.06329 20.9132 3.62801 22.4431Z"
+                                            fill="white" />
+                                        <path
+                                            d="M16.4468 5.70364C16.6474 5.86775 16.8279 6.04795 17.0078 6.23433C17.0481 6.27296 17.0885 6.31159 17.13 6.3514C17.8378 7.07018 18.1192 8.09581 18.1289 9.07808C18.1181 10.1674 17.7723 11.168 16.9916 11.9432C16.9428 11.9903 16.894 12.0374 16.8438 12.0859C16.8051 12.1262 16.7665 12.1665 16.7267 12.2081C16.0079 12.9159 14.9823 13.1973 14 13.207C12.9107 13.1962 11.9101 12.8503 11.1349 12.0697C11.0878 12.0209 11.0407 11.9721 10.9922 11.9218C10.9519 11.8832 10.9115 11.8446 10.87 11.8048C10.1622 11.086 9.88082 10.0603 9.87109 9.07808C9.88188 7.98878 10.2277 6.98816 11.0084 6.21297C11.0572 6.16588 11.106 6.11879 11.1562 6.07027C11.1949 6.02994 11.2335 5.98962 11.2733 5.94808C12.5965 4.64507 14.9902 4.61931 16.4468 5.70364ZM12.3047 7.32808C12.2699 7.36065 12.235 7.39322 12.1992 7.42677C11.735 7.90686 11.5754 8.52805 11.5727 9.17729C11.5843 9.80691 11.8215 10.3163 12.25 10.7734C12.2989 10.8256 12.2989 10.8256 12.3487 10.8789C12.8288 11.3431 13.45 11.5027 14.0992 11.5054C14.7288 11.4938 15.2382 11.2565 15.6953 10.8281C15.7475 10.7792 15.7475 10.7792 15.8008 10.7294C16.265 10.2493 16.4246 9.62812 16.4273 8.97887C16.4157 8.34925 16.1785 7.83991 15.75 7.38277C15.7011 7.33053 15.7011 7.33053 15.6513 7.27724C15.1712 6.81308 14.55 6.65344 13.9008 6.65077C13.2712 6.66236 12.7618 6.89962 12.3047 7.32808Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <span>Address</span>
+                                    <a
+                                        href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">House
+                                        Pakjonal Marga -16 <br>Thamael Kathmandu Nepal</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-50 g-4 justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <div class="header-logo">
+                                <img alt="image" class="img-fluid" src="assets/image/images/nhlogo2.png" />
+                            </div>
+                            <p>Discover the true essence of Nepal with journeys crafted to inspire and amaze. From the majestic Himalayas to cultural landmarks and serene landscapes, every experience is thoughtfully guided. We ensure your travel is smooth, memorable, and filled with lasting moments.</p>
+                            <ul class="social-item-four">
+                                <li class="single-item">
+                                    <a href="https://x.com/NatureHeaven1">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.661 16.2006C12.4533 16.2006 16.1685 10.6598 16.1685 5.85543C16.1685 5.69771 16.1685 5.54117 16.1577 5.38522C16.8804 4.87128 17.5041 4.23317 18 3.50304C17.3268 3.79722 16.6113 3.99015 15.8796 4.07521C16.65 3.62064 17.2269 2.9065 17.5032 2.06383C16.7778 2.48738 15.9849 2.7863 15.1578 2.94669C13.7592 1.48287 11.4201 1.41194 9.9324 2.78893C8.9739 3.67679 8.5662 5.00057 8.8641 6.26324C5.895 6.11616 3.1284 4.73565 1.2528 2.46461C0.2727 4.12602 0.774 6.25064 2.3967 7.31749C1.809 7.30065 1.2339 7.14487 0.72 6.8631V6.90924C0.7209 8.63978 1.9602 10.1299 3.6828 10.4728C3.1392 10.619 2.5686 10.6402 2.016 10.5347C2.4993 12.0163 3.8862 13.031 5.4657 13.0603C4.158 14.0722 2.5425 14.6216 0.8793 14.6199C0.5859 14.619 0.2925 14.6021 0 14.5676C1.6893 15.6344 3.654 16.2006 5.661 16.198" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="single-item">
+                                    <a href="https://www.facebook.com/natureheaventrek">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.6392 18V9.9H13.0983L13.5 6.3H10.6392V4.54658C10.6392 3.61958 10.6628 2.7 11.9582 2.7H13.2702V0.126123C13.2702 0.087423 12.1432 0 11.0031 0C8.62199 0 7.13106 1.49148 7.13106 4.23018V6.3H4.5V9.9H7.13106V18H10.6392Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li class="single-item">
+                                    <a href="https://www.instagram.com/natureheaventreks/">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.88 9C11.88 9.56961 11.7111 10.1264 11.3946 10.6C11.0782 11.0737 10.6284 11.4428 10.1021 11.6608C9.57588 11.8788 8.99681 11.9358 8.43814 11.8247C7.87948 11.7135 7.36631 11.4392 6.96353 11.0365C6.56076 10.6337 6.28646 10.1205 6.17534 9.56186C6.06421 9.00319 6.12125 8.42412 6.33923 7.89787C6.55721 7.37162 6.92634 6.92183 7.39996 6.60537C7.87357 6.28891 8.43039 6.12 9 6.12C9.76356 6.12087 10.4956 6.42458 11.0355 6.9645C11.5754 7.50441 11.8791 8.23644 11.88 9ZM18 5.04V12.96C17.9985 14.2962 17.467 15.5773 16.5221 16.5221C15.5773 17.467 14.2962 17.9985 12.96 18H5.04C3.70377 17.9985 2.42271 17.467 1.47785 16.5221C0.532998 15.5773 0.00151333 14.2962 0 12.96V5.04C0.00151333 3.70377 0.532998 2.42271 1.47785 1.47785C2.42271 0.532998 3.70377 0.00151333 5.04 0H12.96C14.2962 0.00151333 15.5773 0.532998 16.5221 1.47785C17.467 2.42271 17.9985 3.70377 18 5.04ZM13.32 9C13.32 8.14559 13.0666 7.31036 12.5919 6.59994C12.1173 5.88952 11.4426 5.33581 10.6532 5.00884C9.86382 4.68187 8.99521 4.59632 8.15721 4.76301C7.31921 4.9297 6.54946 5.34114 5.9453 5.9453C5.34114 6.54946 4.9297 7.31921 4.76301 8.15721C4.59632 8.99521 4.68187 9.86382 5.00884 10.6532C5.33581 11.4426 5.88952 12.1173 6.59994 12.5919C7.31036 13.0666 8.14559 13.32 9 13.32C10.1453 13.3187 11.2434 12.8631 12.0533 12.0533C12.8631 11.2434 13.3187 10.1453 13.32 9ZM14.76 4.32C14.76 4.1064 14.6967 3.89759 14.578 3.71998C14.4593 3.54238 14.2906 3.40395 14.0933 3.32221C13.896 3.24047 13.6788 3.21908 13.4693 3.26075C13.2598 3.30242 13.0674 3.40528 12.9163 3.55632C12.7653 3.70737 12.6624 3.8998 12.6208 4.1093C12.5791 4.3188 12.6005 4.53595 12.6822 4.7333C12.764 4.93064 12.9024 5.09932 13.08 5.21799C13.2576 5.33666 13.4664 5.4 13.68 5.4C13.9664 5.4 14.2411 5.28621 14.4437 5.08368C14.6462 4.88114 14.76 4.60643 14.76 4.32Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>Trekking Regions</h4>
+                        </div>
+                        <div class="menu-container">
+                            <ul class="widget-list">
+                                <li><a href="#">Everest Region</a></li>
+                                <li><a href="#">Annapurna Region</a></li>
+                                <li><a href="#">Langtang Region</a></li>
+                                <li><a href="#">Tour Guide</a></li>
+                                <li><a href="#">Manaslu Region</a></li>
+                                <li><a href="#">Kanchenjunga Trekking</a></li>
+                                <li><a href="#">Makalu Trekking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>Services</h4>
+                        </div>
+                        <div class="menu-container">
+                            <ul class="widget-list">
+                                <li><a href="#">Trekking</a></li>
+                                <li><a href="#">Peak Climbing</a></li>
+                                <li><a href="#">River Rafting</a></li>
+                                <li><a href="#">Day Tours</a></li>
+                                <li><a href="#">Expedition</a></li>
+                                <li><a href="#">Paragliding</a></li>
+                                 <li><a href="#">Bungy Jumping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>Company</h4>
+                        </div>
+                        <div class="menu-container">
+                            <ul class="widget-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Trekking Season</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                 <li><a href="#">Privacy & Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="w-100  footer-bottom  d-flex justify-content-center">
+                        <div class="copy-write-area d-flex justify-content-center">
+                            <p>© Copyright 2026 Nature Heaven Trek & Expedition Pty. Ltd | Design By <a href="https://pigeonwebsolutions.com/">Pigeon Web Solutions</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section four end -->
+
+
+    <!--  Main jQuery  -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script src="assets/js/jquery-3.7.1.min.js"></script>
+    
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Swiper slider JS -->
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- swiper -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+
+    <!-- Wow  JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- GSAP  JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"8ab53ca94b974dbea2134a7ffba9765a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const slides = document.querySelectorAll(".rbf-slide");
+          let index = 0;
+        
+          setInterval(() => {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+          }, 3000);
+        });
+    </script>
+
+</body>
+
+</html>
